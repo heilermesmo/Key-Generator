@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Key Generator</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syncopate:wght@700&display=swap" rel="stylesheet">
+
+</head>
+<body background="./assets/BACK.svg">
+    <div class="title1">
+        <div class="titleKey">Key.</div><div class="titleGenerator">Generator</div>
+    </div>
+
+    <main class="containerInput">
+        <span>Tamanho: <span id="value"></span>caracteres</span>
+       <input id="slider" class="slider" type="range" min="5" max="25" value="15">
+       <button id="button" class="buttonCto" onclick="generatePassword()">Generate key</button>
+
+    </main>
+
+    <div id="containerPassword" onclick="copyPassword()" class="containerPassword hide">
+        <span class="title">Your generated key :</span>
+        <span id="password" class="password"></span>
+        <span class="tooltip">Click to copy</span>
+    </div>
+    
+
+    <script src="script.js"></script>
+
+</body>
+</html> 
